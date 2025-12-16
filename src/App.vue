@@ -2,7 +2,6 @@
 import { ref } from 'vue';
 import TabNavigation from './components/TabNavigation.vue';
 import CareerView from './views/CareerView.vue';
-import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const tabs = [
   { id: 'career', label: 'Parcours', icon: '👤' },
@@ -14,7 +13,6 @@ const activeTab = ref('career');
 <template>
 
   <div class="app-container">
-    <SpeedInsights></SpeedInsights>
     <TabNavigation
       :tabs="tabs"
       :active-tab="activeTab"
